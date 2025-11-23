@@ -1,10 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Leaf, Recycle, Lightbulb, Users, TreePine, BookOpen } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import heroImage from "@/assets/hero-green-school.jpg";
 import gardenImage from "@/assets/garden-program.jpg";
 
 const Index = () => {
+  const navigate = useNavigate();
+
   const pillars = [
     {
       icon: TreePine,
@@ -67,10 +70,10 @@ const Index = () => {
             Giáo dục toàn diện - Trách nhiệm môi trường - Định hướng tương lai bền vững
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium">
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium" onClick={() => navigate("/tuyen-sinh")}>
               Tuyển Sinh 2025
             </Button>
-            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10">
+            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10" onClick={() => navigate("/tuyen-sinh")}>
               Xem Chương Trình Đào Tạo
             </Button>
           </div>
@@ -207,10 +210,10 @@ const Index = () => {
             chuẩn bị cho đại học và nghề nghiệp tương lai với trách nhiệm môi trường.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <Button size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90">
+            <Button size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90" onClick={() => navigate("/tuyen-sinh")}>
               Hồ Sơ Tuyển Sinh
             </Button>
-            <Button size="lg" variant="outline" className="border-background/50 text-primary-foreground hover:bg-primary-foreground/10">
+            <Button size="lg" variant="outline" className="border-background/50 text-primary-foreground hover:bg-primary-foreground/10" onClick={() => navigate("/tuyen-sinh")}>
               Tư Vấn Tuyển Sinh
             </Button>
           </div>
