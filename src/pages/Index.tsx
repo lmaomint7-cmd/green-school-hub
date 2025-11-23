@@ -8,41 +8,41 @@ const Index = () => {
   const pillars = [
     {
       icon: TreePine,
-      title: "Môi Trường Xanh",
-      description: "Campus với không gian xanh, vườn sinh thái và kiến trúc bền vững"
+      title: "Campus Xanh Thông Minh",
+      description: "Kiến trúc sinh thái kết hợp công nghệ tiên tiến, năng lượng tái tạo"
     },
     {
       icon: Recycle,
-      title: "Tái Chế & Tiết Kiệm",
-      description: "Chương trình tái chế, tiết kiệm năng lượng và giảm thiểu rác thải"
+      title: "Quản Lý Môi Trường",
+      description: "Dự án nghiên cứu về tái chế, xử lý rác thải và kinh tế tuần hoàn"
     },
     {
       icon: BookOpen,
-      title: "Giáo Dục Môi Trường",
-      description: "Chương trình học tập tích hợp kiến thức về bảo vệ môi trường"
+      title: "Chương Trình STEM Xanh",
+      description: "Khoa học môi trường, công nghệ sinh học và năng lượng bền vững"
     },
     {
       icon: Lightbulb,
-      title: "Năng Lượng Sạch",
-      description: "Sử dụng năng lượng mặt trời và các nguồn năng lượng tái tạo"
+      title: "Đổi Mới Sáng Tạo",
+      description: "Khuyến khích sáng kiến xanh, dự án khoa học về môi trường"
     },
     {
       icon: Users,
-      title: "Cộng Đồng Xanh",
-      description: "Xây dựng văn hóa bảo vệ môi trường trong cộng đồng học đường"
+      title: "Câu Lạc Bộ & Dự Án",
+      description: "CLB môi trường, tình nguyện xanh và các dự án cộng đồng"
     },
     {
       icon: Leaf,
-      title: "Sống Xanh",
-      description: "Khuyến khích lối sống xanh, thân thiện với thiên nhiên"
+      title: "Định Hướng Nghề Nghiệp",
+      description: "Chuẩn bị nghề nghiệp xanh và phát triển bền vững"
     }
   ];
 
   const stats = [
     { number: "100%", label: "Năng lượng tái tạo" },
-    { number: "80%", label: "Giảm phát thải CO2" },
-    { number: "500+", label: "Cây xanh trồng" },
-    { number: "95%", label: "Rác thải tái chế" }
+    { number: "50+", label: "Dự án môi trường" },
+    { number: "95%", label: "Tỷ lệ tốt nghiệp" },
+    { number: "30+", label: "CLB hoạt động xanh" }
   ];
 
   return (
@@ -57,18 +57,21 @@ const Index = () => {
         </div>
         
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center animate-fade-in">
+          <div className="inline-block mb-4 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full">
+            <span className="text-primary font-medium">Trường THPT</span>
+          </div>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent font-['Quicksand']">
-            Trường Học Xanh
+            Trường THPT Xanh
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-foreground/90 max-w-3xl mx-auto">
-            Giáo dục bền vững cho thế hệ tương lai - Nơi trẻ em học tập, khám phá và yêu thiên nhiên
+            Giáo dục toàn diện - Trách nhiệm môi trường - Định hướng tương lai bền vững
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium">
-              Khám Phá Ngay
+              Tuyển Sinh 2025
             </Button>
             <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10">
-              Tìm Hiểu Thêm
+              Xem Chương Trình Đào Tạo
             </Button>
           </div>
         </div>
@@ -98,16 +101,23 @@ const Index = () => {
       <section className="py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground font-['Quicksand']">
-            Về Trường Học Xanh
+            Về Trường THPT Xanh
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-            Trường Học Xanh là mô hình giáo dục tiên tiến, tích hợp kiến thức môi trường vào từng hoạt động học tập. 
-            Chúng tôi tin rằng giáo dục không chỉ là học thuật mà còn là trách nhiệm với hành tinh, 
-            nơi học sinh được trải nghiệm thực tế về bảo vệ môi trường qua các hoạt động sống động và ý nghĩa.
+            Trường THPT Xanh tiên phong trong giáo dục bền vững, nơi học sinh không chỉ học kiến thức mà còn 
+            phát triển kỹ năng nghiên cứu khoa học, giải quyết vấn đề môi trường và chuẩn bị cho các ngành nghề xanh. 
+            Chương trình đào tạo kết hợp chặt chẽ giữa học thuật xuất sắc và trách nhiệm môi trường, 
+            giúp học sinh sẵn sàng cho đại học và sự nghiệp tương lai.
           </p>
-          <div className="inline-flex items-center gap-2 text-accent font-medium">
-            <Leaf className="w-5 h-5" />
-            <span>Cam kết môi trường bền vững</span>
+          <div className="flex gap-6 justify-center flex-wrap">
+            <div className="inline-flex items-center gap-2 text-accent font-medium">
+              <Leaf className="w-5 h-5" />
+              <span>Đào tạo THPT chất lượng cao</span>
+            </div>
+            <div className="inline-flex items-center gap-2 text-primary font-medium">
+              <BookOpen className="w-5 h-5" />
+              <span>Định hướng nghề nghiệp xanh</span>
+            </div>
           </div>
         </div>
       </section>
@@ -144,41 +154,41 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
               <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground font-['Quicksand']">
-                Chương Trình Vườn Sinh Thái
+                Nghiên Cứu Khoa Học Môi Trường
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Học sinh tham gia trồng và chăm sóc cây xanh, rau củ hữu cơ trong vườn trường. 
-                Đây là cơ hội tuyệt vời để các em học về chu trình sinh học, trách nhiệm chăm sóc 
-                thiên nhiên và giá trị của thực phẩm sạch.
+                Học sinh được tham gia các dự án nghiên cứu thực tế về môi trường, từ phân tích chất lượng 
+                không khí đến phát triển giải pháp năng lượng xanh. Các nghiên cứu được hướng dẫn bởi giáo viên 
+                giàu kinh nghiệm và có cơ hội tham gia các cuộc thi khoa học cấp quốc gia.
               </p>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start gap-3">
                   <div className="w-6 h-6 bg-accent/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <Leaf className="w-4 h-4 text-accent" />
+                    <Lightbulb className="w-4 h-4 text-accent" />
                   </div>
-                  <span className="text-foreground">Trồng và thu hoạch rau củ hữu cơ</span>
+                  <span className="text-foreground">Dự án nghiên cứu khoa học STEM</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="w-6 h-6 bg-accent/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <Leaf className="w-4 h-4 text-accent" />
+                    <Lightbulb className="w-4 h-4 text-accent" />
                   </div>
-                  <span className="text-foreground">Học về phân bón tự nhiên và composting</span>
+                  <span className="text-foreground">Phòng thí nghiệm môi trường hiện đại</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="w-6 h-6 bg-accent/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <Leaf className="w-4 h-4 text-accent" />
+                    <Lightbulb className="w-4 h-4 text-accent" />
                   </div>
-                  <span className="text-foreground">Quan sát côn trùng và động vật có ích</span>
+                  <span className="text-foreground">Tham gia cuộc thi khoa học quốc gia và quốc tế</span>
                 </li>
               </ul>
               <Button className="bg-secondary hover:bg-secondary/90 text-secondary-foreground">
-                Xem Các Chương Trình
+                Xem Dự Án Học Sinh
               </Button>
             </div>
             <div className="order-1 lg:order-2">
               <img 
                 src={gardenImage} 
-                alt="Chương trình vườn sinh thái" 
+                alt="Nghiên cứu khoa học môi trường" 
                 className="rounded-2xl shadow-2xl w-full h-auto animate-float"
               />
             </div>
@@ -190,18 +200,18 @@ const Index = () => {
       <section className="py-20 px-6 bg-gradient-to-r from-primary to-accent text-primary-foreground">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 font-['Quicksand']">
-            Cùng Xây Dựng Tương Lai Xanh
+            Tuyển Sinh Năm Học 2025
           </h2>
           <p className="text-lg mb-8 opacity-95 max-w-2xl mx-auto">
-            Hãy tham gia cùng chúng tôi để tạo nên một thế hệ yêu thiên nhiên, 
-            hiểu biết về môi trường và sẵn sàng hành động vì một tương lai bền vững.
+            Trở thành một phần của cộng đồng THPT Xanh - nơi học sinh phát triển toàn diện, 
+            chuẩn bị cho đại học và nghề nghiệp tương lai với trách nhiệm môi trường.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Button size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90">
-              Đăng Ký Tham Quan
+              Hồ Sơ Tuyển Sinh
             </Button>
             <Button size="lg" variant="outline" className="border-background/50 text-primary-foreground hover:bg-primary-foreground/10">
-              Liên Hệ Chúng Tôi
+              Tư Vấn Tuyển Sinh
             </Button>
           </div>
         </div>
@@ -212,13 +222,13 @@ const Index = () => {
         <div className="max-w-7xl mx-auto text-center">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Leaf className="w-8 h-8 text-primary" />
-            <span className="text-2xl font-bold text-foreground font-['Quicksand']">Trường Học Xanh</span>
+            <span className="text-2xl font-bold text-foreground font-['Quicksand']">Trường THPT Xanh</span>
           </div>
           <p className="text-muted-foreground mb-4">
-            Giáo dục bền vững - Tương lai xanh
+            Giáo dục THPT chất lượng cao - Định hướng nghề nghiệp xanh - Trách nhiệm môi trường
           </p>
           <p className="text-sm text-muted-foreground">
-            © 2024 Trường Học Xanh. Mọi quyền được bảo lưu.
+            © 2024 Trường THPT Xanh. Mọi quyền được bảo lưu.
           </p>
         </div>
       </footer>
